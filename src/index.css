@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#defaultLayout,
+#guestLayout {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #212121;
+    background-color: #f6f6f6;
+}
+
+.sidebar-menu-icon {
+    padding-right: 5px;
+}
+
+.suffix-text {
+    height: 19px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.0045em;
+    color: #5B6871;
+    padding: 15px 0;
+}
+
+.custom-primary-color {
+    color: #FF8600 !important;
+    text-decoration: none;
+}
+
+.copyright-text {
+    color: #84919A;
+    font-size: 13px;
+    height: 19px;
+}
+
+.mt-25 {
+    margin-top: 25% !important;
+}
+
+.mt-12 {
+    margin-top: 12% !important
+}
+
+.left-col {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.right-col {
+    background-color: #F8FAFC;
+    /* Light gray color */
+    height: 100vh;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 55%;
+    margin: 0 auto;
+    margin-top: 18%;
+}
+
+.form-container {
+    margin: 8%;
+}
+
+.bullet-checkbox {
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+.bullet-text {
+    padding: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 422px;
+    height: 48px;
+    margin: -50px 0px 0 25px;
+
+}
+
+input {
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+/* input:focus {
+    border-color: #5b08a7;
+} */
+
+#or {
+    position: relative;
+    width: 100%;
+    /* height: 20px; */
+    line-height: 5px;
+    text-align: center;
+    margin: 15px 2px 15px 2px;
+}
+
+#or::before,
+#or::after {
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    top: 5px;
+    background-color: #aaa;
+    content: '';
+}
+
+#or::before {
+    left: 0;
+}
+
+#or::after {
+    right: 0;
+}
+
+.btn-icon {
+    width: 5%;
+    padding: 4px 2px;
+}
+
+.policySect>p {
+    font-size: 14px;
+    font-weight: 400px;
+    width: 367px;
+    height: 38px;
+}
+
+.custom-icon-btn {
+    background-color: white;
+    width: 100%;
+    color: #000;
+    border-color: #eee;
+
+}
+
+.custom-icon-bt:hover,
+.custom-icon-bt:active,
+.custom-icon-bt:focus {
+    background: #fff !important;
+}
+
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+    background: #FF8600 !important;
+}
+
+.btn-custom {
+    width: 100%;
+    background-color: #FF8600 !important;
+    border: none;
+}
+
+.btn-custom-confirm-mail {
+
+    align-items: center;
+    padding: 8px 16px;
+    width: 160px;
+    height: 40px;
+    background: #FF8600;
+    border-radius: 6px;
+    border: none;
+}
+
+#defaultLayout {
+    display: flex;
+}
+
+#defaultLayout aside {
+    width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+}
+
+#defaultLayout aside>a {
+    display: block;
+    /* padding: 0.75rem 1rem; */
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    color: #818187;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#defaultLayout aside>a:hover {
+    color: orange;
+    background-color: white;
+    box-shadow: 0px 4px 58px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+}
+
+#defaultLayout .content {
+    flex: 1;
+}
+
+#defaultLayout header {
+    height: 80px;
+    padding: 2rem 3rem;
+    /* background-color: white; */
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#defaultLayout main {
+    padding: 2rem;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
